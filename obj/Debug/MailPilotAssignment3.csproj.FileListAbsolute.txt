@@ -1,0 +1,3 @@
+C:\Users\LAKINKUMAR\Downloads\COMP397-Assignment3-gh-pages1\obj\Debug\MailPilotAssignment3.csprojResolveAssemblyReference.cache
+C:\Users\LAKINKUMAR\Downloads\COMP397-Assignment3-gh-pages1\obj\Debug\MailPilot-Assignment3.dll
+C:\Users\LAKINKUMAR\Downloads\COMP397-Assignment3-gh-pages1\obj\Debug\MailPilot-Assignment3.pdb
