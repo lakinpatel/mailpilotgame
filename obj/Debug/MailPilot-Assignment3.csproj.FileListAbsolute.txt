@@ -1,0 +1,5 @@
+C:\Users\a_b\Documents\Visual Studio 2013\Projects\MailPilot-Assignment3\MailPilot-Assignment3\bin\MailPilot-Assignment3.dll.config
+C:\Users\a_b\Documents\Visual Studio 2013\Projects\MailPilot-Assignment3\MailPilot-Assignment3\bin\MailPilot-Assignment3.dll
+C:\Users\a_b\Documents\Visual Studio 2013\Projects\MailPilot-Assignment3\MailPilot-Assignment3\bin\MailPilot-Assignment3.pdb
+C:\Users\a_b\Documents\Visual Studio 2013\Projects\MailPilot-Assignment3\MailPilot-Assignment3\obj\Debug\MailPilot-Assignment3.dll
+C:\Users\a_b\Documents\Visual Studio 2013\Projects\MailPilot-Assignment3\MailPilot-Assignment3\obj\Debug\MailPilot-Assignment3.pdb
