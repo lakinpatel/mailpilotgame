@@ -1,4 +1,12 @@
-﻿/// <reference path="../objects/button.ts" />
+﻿///                        Name Of the Game: Mario Bros                   
+///                        Source File Name: gameinstructions.ts                    
+///                         Author's Name : Lakin Patel                     
+///                        Last Modified By: Lakin Patel                    
+///             Date Last Modified: 2015/03/20 10:38PM                 
+///               Program Description: The JavaScript File of the Game       
+///              Author's Github Profile :http://github.com/lakinpatel           
+
+/// <reference path="../objects/button.ts" />
 /// <reference path="../objects/scoreboard.ts" />
 /// <reference path="../objects/label.ts" />
 /// <reference path="../objects/button.ts" />

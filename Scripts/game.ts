@@ -1,4 +1,16 @@
-﻿/// <reference path="typings/createjs-lib/createjs-lib.d.ts" />
+﻿
+///                        Name Of the Game: Mario Bros                   
+///                        Source File Name: game.ts                    
+///                         Author's Name : Lakin Patel                     
+///                        Last Modified By: Lakin Patel                    
+///             Date Last Modified: 2015/03/20 10:38PM                 
+///               Program Description: The Main JavaScript File of the Game       
+///              Author's Github Profile : http://github.com/lakinpatel           
+
+
+
+
+/// <reference path="typings/createjs-lib/createjs-lib.d.ts" />
 /// <reference path="typings/easeljs/easeljs.d.ts" />
 /// <reference path="typings/tweenjs/tweenjs.d.ts" />
 /// <reference path="typings/soundjs/soundjs.d.ts" />
@@ -13,7 +25,7 @@
 /// <reference path="objects/fish.ts" />
 
 
-// Global game Variables
+// Global Game Variables
 var canvas;
 var stage: createjs.Stage;
 var assets: createjs.LoadQueue;
@@ -31,6 +43,8 @@ var gameOver: states.GameOver;
 var menu: states.GameMenu;
 var instructions: states.GameInstruction;
 
+
+// different game images and sounds are loaded
 var manifest = [
     { id: "logo", src: "assets/images/mariologo.png" },
     { id: "shark", src: "assets/images/enemy.png" },
@@ -41,9 +55,9 @@ var manifest = [
     { id: "tryAgainButton", src: "assets/images/play_again_button.png" },
     { id: "menuButton", src: "assets/images/menu.png" },
     { id: "instructionsButton", src: "assets/images/instructions.png" },
-    { id: "underwater", src: "assets/audio/underwater_sound.mp3" },
-    { id: "life", src: "assets/audio/lost_life.wav" },
-    { id: "caught", src: "assets/audio/fish_caught.wav" }
+    { id: "underwater", src: "assets/audio/game_world.mp3" },
+    { id: "life", src: "assets/audio/mariodie.wav" },
+    { id: "caught", src: "assets/audio/eat_icecream.wav" }
 ];
 
 
@@ -79,28 +93,30 @@ function gameLoop() {
    
 }
 
+
+// Function to check the status of the game
 function changeState(state: number): void {
     // Launch Various "screens"
     switch (state) {
-        case constants.MENU_STATE:
+        case constants.MENU_STATE:   // for menu state
             // instantiate menu screen
             menu = new states.GameMenu();
             currentStateFunction = menu;
             break;
 
-        case constants.PLAY_STATE:
+        case constants.PLAY_STATE:   // for Playing mode
             // instantiate game play screen
             gamePlay = new states.GamePlay();
             currentStateFunction = gamePlay;
             break;
 
-        case constants.GAME_INSTRUCTION_STATE:
+        case constants.GAME_INSTRUCTION_STATE:  // Instruction mode
             // instantiate game play screen
             instructions = new states.GameInstruction();
             currentStateFunction = instructions;
             break;
 
-        case constants.GAME_OVER_STATE:
+        case constants.GAME_OVER_STATE:  // for Game Over State
             // instantiate game over screen
             gameOver = new states.GameOver();
             currentStateFunction = gameOver;
